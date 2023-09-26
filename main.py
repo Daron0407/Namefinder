@@ -53,7 +53,8 @@ def main(text):
                     if sorted(imie + nazwisko) == sorted(text):
                         total += 1
                         outputFile.write(f"{imie} {nazwisko}\n")
-    print(total)
+    if __name__=='__main__':
+        print(total)
 
 
 if __name__=='__main__':
