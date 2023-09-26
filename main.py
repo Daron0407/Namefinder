@@ -1,4 +1,4 @@
-from lib.Multiset import Multiset
+from libraries.Multiset import Multiset
 from collections import defaultdict
 from sys import argv
 
