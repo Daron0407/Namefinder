@@ -5,10 +5,7 @@ from sys import argv
 SOURCES = r"./sources/"
 PATH = r"./data/"
 
-def main():
-    text = "August Poniatowski"
-    if len(argv) > 1:
-        text = argv[1] + (argv[2] if len(argv) > 2 else '')
+def main(text):
     text = text.lower().replace(' ','')
     Sext = Multiset(text)
     imiona = defaultdict(set)
@@ -60,4 +57,4 @@ def main():
 
 
 if __name__=='__main__':
-    main()
+    main(''.join(argv[1:]))
